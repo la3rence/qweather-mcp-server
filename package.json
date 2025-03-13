@@ -1,0 +1,30 @@
+{
+  "name": "qweather-mcp-server",
+  "version": "0.0.1",
+  "description": "An example MCP Server for QWeather 和风天气",
+  "type": "module",
+  "bin": {
+    "weather": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js",
+    "dev": "node build/index.js",
+    "start": "tsc && node build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "keywords": ["qweather", "mcp"],
+  "author": "la3rence",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "express": "^4.21.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}
